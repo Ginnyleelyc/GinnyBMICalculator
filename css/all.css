@@ -1,0 +1,277 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.bor-normal {
+  border-left: 5px solid #86D73E; }
+
+.bor-underweight {
+  border-left: 5px solid #31BAF9; }
+
+.bor-overweight {
+  border-left: 5px solid #FF982D; }
+
+.bor-obeseI {
+  border-left: 5px solid #FF6C02; }
+
+.bor-obeseII {
+  border-left: 5px solid #ED5A32; }
+
+.bor-obeseIII {
+  border-left: 5px solid #FF1200; }
+
+.logo a {
+  display: block;
+  background-image: url(../img/BMICLogo.png);
+  width: 117px;
+  height: 117px;
+  background-size: contain;
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.head {
+  display: flex;
+  background-color: #424242;
+  padding: 70px 0; }
+  .head .logo {
+    margin: 0 100px;
+    align-self: center; }
+  .head .count {
+    display: inline-flex; }
+  .head .userinput label {
+    display: block;
+    margin-bottom: 7px;
+    font-family: AppleSystemUIFont;
+    font-size: 18px;
+    color: #FFD366; }
+  .head .userinput input {
+    background: rgba(255, 255, 255, 0.18);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    width: 250px;
+    margin-bottom: 20px;
+    line-height: 40px; }
+    .head .userinput input[placeholder] {
+      padding-left: 16px;
+      font-family: SFNSDisplay;
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.9); }
+    .head .userinput input:focus {
+      outline: none;
+      box-shadow: 0 1px 6px 3px rgba(255, 195, 49, 0.64); }
+  .head .userinput ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5); }
+  .head .resultButton {
+    align-self: center;
+    margin-left: 50px; }
+    .head .resultButton .sendbtn {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      outline: none;
+      border: none;
+      background: #FFD366;
+      font-family: PingFangTC-Regular;
+      font-size: 24px;
+      color: #424242; }
+      .head .resultButton .sendbtn:hover {
+        background: #FFD366;
+        box-shadow: 0 1px 6px 3px rgba(255, 195, 49, 0.64); }
+      .head .resultButton .sendbtn:active {
+        background: #DEA921; }
+    .head .resultButton .normal {
+      color: #86D73E;
+      border-color: #86D73E; }
+      .head .resultButton .normal .refresh, .head .resultButton .normal .save {
+        background-color: #86D73E; }
+    .head .resultButton .underweight {
+      color: #31BAF9;
+      border-color: #31BAF9; }
+      .head .resultButton .underweight .refresh, .head .resultButton .underweight .save {
+        background-color: #31BAF9; }
+    .head .resultButton .overweight {
+      color: #FF982D;
+      border-color: #FF982D; }
+      .head .resultButton .overweight .refresh, .head .resultButton .overweight .save {
+        background-color: #FF982D; }
+    .head .resultButton .obeseI {
+      color: #FF6C02;
+      border-color: #FF6C02; }
+      .head .resultButton .obeseI .refresh, .head .resultButton .obeseI .save {
+        background-color: #FF6C02; }
+    .head .resultButton .obeseII {
+      color: #ED5A32;
+      border-color: #ED5A32; }
+      .head .resultButton .obeseII .refresh, .head .resultButton .obeseII .save {
+        background-color: #ED5A32; }
+    .head .resultButton .obeseIII {
+      color: #FF1200;
+      border-color: #FF1200; }
+      .head .resultButton .obeseIII .refresh, .head .resultButton .obeseIII .save {
+        background-color: #FF1200; }
+    .head .resultButton #answer {
+      display: none; }
+      .head .resultButton #answer::after {
+        display: block;
+        content: "";
+        clear: both; }
+    .head .resultButton .BMIN {
+      float: left;
+      position: relative;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      text-align: center;
+      padding: 30px 0;
+      font-family: SFNSDisplay;
+      font-size: 32px;
+      border: 6px solid; }
+      .head .resultButton .BMIN .s-size {
+        font-family: AppleSystemUIFont;
+        font-size: 14px; }
+      .head .resultButton .BMIN .save {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        font-size: 14px;
+        line-height: 30px; }
+        .head .resultButton .BMIN .save i {
+          color: #4A4A4A; }
+      .head .resultButton .BMIN .refresh {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        font-size: 14px;
+        line-height: 30px; }
+        .head .resultButton .BMIN .refresh i {
+          color: #4A4A4A; }
+    .head .resultButton .category {
+      float: right;
+      align-self: center;
+      line-height: 120px;
+      margin-left: 20px;
+      font-family: SFNSDisplay;
+      font-size: 32px; }
+
+.content {
+  background-color: #F5F4F4;
+  padding: 50px 0px;
+  min-height: 550px; }
+  .content h3 {
+    font-family: SFNSDisplay;
+    font-size: 24px;
+    color: #424242;
+    text-align: center; }
+  .content #noText {
+    padding: 20px;
+    margin: 80px auto;
+    width: 500px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background: #fff;
+    font-size: 20px;
+    border: 4px dashed #FFD366; }
+  .content .record {
+    padding: 36px 0;
+    width: 80%;
+    margin: 0 auto; }
+    .content .record li {
+      background-color: #fff;
+      line-height: 62px;
+      margin-bottom: 16px;
+      padding-left: 12px; }
+      .content .record li table {
+        table-layout: fixed;
+        text-align: center;
+        width: 100%;
+        font-family: SFNSDisplay;
+        font-size: 20px;
+        color: #4A4A4A; }
+        .content .record li table span {
+          font-family: AppleSystemUIFont;
+          font-size: 12px;
+          color: #424242; }
+        .content .record li table a {
+          color: #FC252E; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  background: #FFD366; }
+  .footer .logo {
+    align-self: center;
+    height: 50px;
+    width: 50px;
+    background-color: #000; }
+
+/*# sourceMappingURL=all.css.map */
